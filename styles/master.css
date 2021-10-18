@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Jonathan";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Jonathan"), url("Jonathan.ttf") format("woff");
+}
+
+h2 {
+  font-family: "Handlee", cursive;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .display-3 {
+    font-size: 50px;
+  }
+
+  .landing img {
+    width: 100%;
+    margin-top: 40vh;
+  }
+}
+
+p {
+  font-family: "Handlee", cursive;
+}
+
+ol,
+li {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2rem;
+}
+
+a,
+label {
+  font-family: "Handlee", cursive;
+  letter-spacing: 3px;
+}
+input,
+textarea {
+  font-family: "Handlee", cursive;
+  letter-spacing: 2px;
+}
+
+.lead {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.landing_img {
+  width: 80%;
+  margin-top: 30vh;
+}
+
+.mybutton {
+  background-color: #ffdb96;
+  box-shadow: 3px 3px 5px #b1986970;
+  font-family: "Montserrat", sans-serif;
+  border: #b19869;
+  text-transform: uppercase;
+}
+
+.mybutton:hover {
+  background-color: #ebd4b1;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+.card {
+  border: none;
+  background: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+  .col-sm {
+    transition: translate3d(0, 0, 0);
+    transition: 0.5s ease;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Questrial", sans-serif;
+    font-size: 20px;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .col-sm {
+    transition: translate3d(0, 0, 0);
+    transition: 0.5s ease;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Questrial", sans-serif;
+    font-size: 20px;
+    margin-left: -60px;
+    margin-right: -60px;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .col-sm {
+    font-size: 13px;
+    width: 100%;
+    display: block;
+  }
+  .col-sm img {
+    max-width: 80px;
+  }
+  #hide_on_mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* NAVBAR STYLES */
+
+.navbar.index {
+  background-color: #808f5f !important;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.navbar.index.solid {
+  color: #808f5f;
+  transition: 0.5s ease;
+  opacity: 0.8;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 18px;
+  padding: 10px 15px !important;
+  background-color: transparent;
+  border-radius: 5%;
+  transition: ease-in 0.2s;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.267);
+}
+
+/* BLOG STYLES */
+
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  overflow: hidden;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  .portfolio .portfolio-item .portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    background-color: #bca47a;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .portfolio .portfolio-item:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: grey;
+  opacity: 1;
+}
